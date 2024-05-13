@@ -40,6 +40,7 @@ public class InicioServlet extends HttpServlet {
         	RequestDispatcher dispatcher = request.getRequestDispatcher("views/portalinicio.jsp");
             dispatcher.forward(request, response);
         } else {
+        	//Se feliz xD
             // Credenciales inválidas, volver a mostrar el formulario de inicio de sesión con un mensaje de error
             response.setContentType("text/html");
             response.getWriter().println("<h1>Error de inicio de sesión</h1>");
