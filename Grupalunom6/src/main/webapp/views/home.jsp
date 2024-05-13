@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Título de la página -->
-        <title>AwakeLab</title>
+        <title>AwakeLab sonriexD</title>
 
         <!-- Hoja de estilo -->
         <link rel="stylesheet" href="<core:url value="/res/css/estilo.css" />">
