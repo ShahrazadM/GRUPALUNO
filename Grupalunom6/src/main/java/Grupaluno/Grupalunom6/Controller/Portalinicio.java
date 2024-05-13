@@ -1,4 +1,4 @@
-package Grupaluno.Grupalunom6;
+package Grupaluno.Grupalunom6.Controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

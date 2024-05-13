@@ -38,10 +38,10 @@
         <p>En nuestro portal encontrarás información relevante sobre prevención de riesgos en tu empresa.</p>
         <p>Puedes comenzar explorando nuestras capacitaciones, contactándonos para más información o creando una nueva capacitación.</p>
         <ul>
-            <li><a href="listarcapacitaciones.jsp">Ver Capacitaciones</a></li>
+            
             <li><a href="contacto">Contacto</a></li>
             <li><a href="creacapacitacion">CrearCapacitacion</a></li> 
-            
+            <li><a href="listacapacitaciones">Listarcapacitaciones</a></li> 
 	</ul>
 	</div>
 	</body>
