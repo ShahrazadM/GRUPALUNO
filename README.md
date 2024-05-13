@@ -1,0 +1,1 @@
+En el presente repositorio se incluiran los progresos del grupal1 del modulo 6 donde se aplica proyectos con maven . Se sugiere utilizar Eclipse Enterprise y  tener apache maven instalado y configurado para su correto desarrollo.
