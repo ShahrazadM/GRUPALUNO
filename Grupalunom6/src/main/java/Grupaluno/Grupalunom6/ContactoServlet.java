@@ -2,10 +2,11 @@ package Grupaluno.Grupalunom6;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+@WebServlet("/contacto")
 public class ContactoServlet extends HttpServlet {
     /**
 	 * 
@@ -14,16 +15,7 @@ public class ContactoServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Lógica para manejar solicitudes GET relacionadas con el formulario de contacto
-        response.setContentType("text/html");
-        response.getWriter().println("<h1>Formulario de Contacto</h1>");
-        response.getWriter().println("<form action=\"contacto\" method=\"post\">");
-        response.getWriter().println("Nombre: <input type=\"text\" name=\"nombre\"><br>");
-        response.getWriter().println("Correo electrónico: <input type=\"text\" name=\"email\"><br>");
-        response.getWriter().println("Asunto: <input type=\"text\" name=\"asunto\"><br>");
-        response.getWriter().println("Mensaje:<br>");
-        response.getWriter().println("<textarea name=\"mensaje\" rows=\"5\" cols=\"50\"></textarea><br>");
-        response.getWriter().println("<input type=\"submit\" value=\"Enviar\">");
-        response.getWriter().println("</form>");
+        request.getRequestDispatcher("/views/contacto.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

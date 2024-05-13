@@ -2,10 +2,12 @@ package Grupaluno.Grupalunom6;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@WebServlet("/creacapacitacion")
 public class CrearCapacitacionServlet extends HttpServlet {
     /**
 	 * 
@@ -13,14 +15,8 @@ public class CrearCapacitacionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Lógica para manejar solicitudes GET relacionadas con la creación de capacitaciones
-        response.setContentType("text/html");
-        response.getWriter().println("<h1>Crear Nueva Capacitación</h1>");
-        response.getWriter().println("<form action=\"creacapacitacion\" method=\"post\">");
-        response.getWriter().println("Título: <input type=\"text\" name=\"titulo\"><br>");
-        response.getWriter().println("Descripción: <textarea name=\"descripcion\" rows=\"5\" cols=\"50\"></textarea><br>");
-        response.getWriter().println("<input type=\"submit\" value=\"Crear\">");
-        response.getWriter().println("</form>");
+        // Lógica para manejar solicitudes GET relacionadas con el formulario de contacto
+        request.getRequestDispatcher("/views/creacapacitacion.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

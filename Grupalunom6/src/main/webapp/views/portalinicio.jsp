@@ -1,4 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,6 +39,11 @@
         <p>Puedes comenzar explorando nuestras capacitaciones, contactándonos para más información o creando una nueva capacitación.</p>
         <ul>
             <li><a href="listarcapacitaciones.jsp">Ver Capacitaciones</a></li>
-            <li><a href="contacto.jsp">Contacto</a></li>
-            <li><a href="creacapacitacion.jsp">CrearCapacitacion</a></li> 
+            <li><a href="contacto">Contacto</a></li>
+            <li><a href="creacapacitacion">CrearCapacitacion</a></li> 
             
+	</ul>
+	</div>
+	</body>
+	</html>
+		
