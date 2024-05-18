@@ -46,7 +46,7 @@
 <body>
     <%@ include file="minenu.jsp" %> <!-- Incluye el menú -->
     <div class="formulario-container">
-        <h1>Crear Nueva Capacitación</h1>
+        <h1>Crear NuevasCapacitación</h1>
         <form action="creacapacitacion" method="post">
             <label for="titulo">Título:</label>
             <input type="text" id="titulo" name="titulo" required><br>
